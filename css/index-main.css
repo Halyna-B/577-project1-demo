@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+:root {
+    --menu-color: #f7f7f7;
+    --main-color: #ffffff;
+    --main-font-family:'Roboto', sans-serif;
+    --logo-font-family: 'Playfair Display', serif;
+}
+section {
+    background-image: url("/image/section-bg.jpg");
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.info h2 {
+ color: #6f7380;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12.5px;
+}
+.info h2::before {
+    content: "一";
+    color: #f51400;
+}
+.instruction img {
+width:10%;
+}
+.base-info p{
+    font-family: var(--logo-font-family);
+    font-size: 45px;
+    color: #505155;
+}
+.blue {
+    color: #14a9ee;
+
+}
+.general-info p {
+ font-family: var(--main-font-family);
+ font-size: 19px;
+ color: #505155;
+}
+#h3 {
+    font-family: var(--main-font-family);
+    font-size: 24px;
+    color: #232428;
+}
+.instruction p {
+    font-family: var(--main-font-family);
+    font-size: 15px;
+    color: #505155;
+}

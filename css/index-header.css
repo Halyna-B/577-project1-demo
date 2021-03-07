@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+
+header {
+    background-image: url("/image/header-bg.png");
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+:root {
+    --menu-color: #f7f7f7;
+    --main-color: #ffffff;
+    --main-font-family:'Roboto', sans-serif;
+    --logo-font-family: 'Playfair Display', serif;
+}
+.logo > img {
+    width: 188px;
+}
+
+.menu a {
+    color: var(--menu-color);
+    font-size: 14px;
+    font-family: var(--main-font-family);
+    text-decoration: none;
+}
+ 
+ul {
+    list-style: none;
+}
+.menu a:hover {
+     text-shadow:0px 0px 10px #f7f7f7;
+}
+
+.banner h2 {
+    color: var(--main-color);
+    font-family: var(--main-font-family);
+    font-size: 12.5px;
+
+}
+
+.banner h2::before {
+    content: "一";
+    color: #f51400;
+    
+}
+
+.banner h1 {
+font-family: var(--logo-font-family);
+font-size: 125px;
+color: var(--main-color);
+}
+
+.banner article p {
+    color: var(--main-color);
+    font-family: var(--main-font-family);
+    font-size: 12px;
+
+}
+
+.banner article a {
+    color: var(--main-color);
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.banner article a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+.banner article a::after {
+    content: "   →";
+    color: #ffffff;
+    pointer-events: none;
+}
