@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
 
 header {
-    background-image: url("/image/header-bg.png");
+    background-image: url("../image/header-bg.png");
     background-origin: content-box;
     background-repeat: no-repeat;
     background-size: cover;
