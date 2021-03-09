@@ -36,7 +36,7 @@ ul {
 #subtitle {
     color: var(--main-color);
     font-family: var(--main-font-family);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
 }
 
@@ -47,20 +47,20 @@ ul {
 
 .banner h1 {
 font-family: var(--logo-font-family);
-font-size: 125px;
+font-size: 180px;
 color: var(--main-color);
 }
 
 .banner article p:first-child {
     color: var(--main-color);
     font-family: var(--main-font-family);
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
 }
 .banner article p:nth-child(2) {
     color: var(--main-color);
     font-family: var(--main-font-family);
-    font-size: 14px;
+    font-size: 13px;
 }
 .banner article p:nth-last-child(2) {
     color: #ffffffbf;
