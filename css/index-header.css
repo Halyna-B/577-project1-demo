@@ -33,17 +33,16 @@ ul {
      text-shadow:0px 0px 10px #f7f7f7;
 }
 
-.banner h2 {
+#subtitle {
     color: var(--main-color);
     font-family: var(--main-font-family);
-    font-size: 12.5px;
-
+    font-size: 14px;
+    font-weight: bold;
 }
 
-.banner h2::before {
-    content: "一";
+#subtitle::before {
+    content: "一 ";
     color: #f51400;
-    
 }
 
 .banner h1 {
@@ -52,13 +51,22 @@ font-size: 125px;
 color: var(--main-color);
 }
 
-.banner article p {
+.banner article p:first-child {
     color: var(--main-color);
     font-family: var(--main-font-family);
-    font-size: 12px;
-
+    font-size: 16px;
+    font-weight: bold;
 }
-
+.banner article p:nth-child(2) {
+    color: var(--main-color);
+    font-family: var(--main-font-family);
+    font-size: 14px;
+}
+.banner article p:nth-last-child(2) {
+    color: #ffffffbf;
+    font-family: var(--main-font-family);
+    font-size: 13px;
+}
 .banner article a {
     color: var(--main-color);
     font-family: var(--main-font-family);
