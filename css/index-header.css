@@ -17,10 +17,10 @@ header {
     --logo-font-family: 'Playfair Display', serif;
 }
 
-* {
+ {
     margin: 0;
     padding: 0;
-}
+} 
 
 body {
     max-width: 980px;
@@ -29,7 +29,8 @@ body {
 
 .logo > img {
     width: 188px;
-}
+    padding: 30px;
+    }
 
 .main-menu a {
     color: var(--menu-color);
@@ -37,12 +38,12 @@ body {
     font-family: var(--main-font-family);
     text-decoration: none;
     font-weight: bolder;
-   
 }
  
 .main-menu li {
     list-style: none;
     text-align: right;
+    display: none;
 }
 
 .main-menu a:hover {
@@ -55,6 +56,7 @@ body {
     font-family: var(--main-font-family);
     font-size: 13px;
     font-weight: bold;
+    padding-left: 30px;
 }
 
 #subtitle::before {
@@ -64,15 +66,27 @@ body {
 
 .banner h1 {
     font-family: var(--logo-font-family);
-    font-size: 180px;
+    font-size: 70px;
     color: var(--main-color);
+    padding: 30px;
+    font-weight: 600;
 }
 
 .banner iframe {
     border-width: 10px;
     border-color: #ffffff;
-    margin-right: auto;
-    margin-left: 30px;
+   max-width: 350px;
+   max-height: 200px;
+   margin-left: 30px;
+    }
+
+
+.trip {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 50px;
+    padding: 30px;
 }
 
 .trip p:first-child {
@@ -80,24 +94,21 @@ body {
     font-family: var(--main-font-family);
     font-size: 17px;
     font-weight: bold;
-    margin: 30px;
-    margin-bottom: 0px;
+    
 }
 
 .trip p:nth-child(2) {
     color: var(--main-color);
     font-family: var(--main-font-family);
     font-size: 13px;
-    margin: 30px;
-    margin-bottom: 0px;
+  
 }
 
 .trip p:nth-last-child(2) {
     color: #ffffffbf;
     font-family: var(--main-font-family);
     font-size: 13px;
-    margin: 30px;
-    margin-bottom: 0px;
+    
 }
 
 .trip a {
@@ -105,8 +116,8 @@ body {
     font-family: var(--main-font-family);
     font-size: 14px;
     text-decoration: none;
-    margin: 30px;
-    margin-bottom:30px;
+    font-weight: bold;
+ 
 }
 
 .trip a:hover {
@@ -121,28 +132,8 @@ body {
 }
 
 @media (min-width: 480px) {
-
-    .logo > img {
-    margin-right: auto;
-    padding: 30px;
-    }
-
-    .banner iframe {
-   max-width: 350px;
-    }
-
-
-#subtitle {
-    margin-right: auto;
-    margin-left: 30px;
 }
-
-.banner h1 {
-    font-size: 70px;
-    margin-right: auto;
-    margin-left: 30px;
-    font-weight: 600;
-}
+   
 
 
 
@@ -161,6 +152,7 @@ body {
 
 
 
+/*
 @media (min-width: 801px) {
 
 header nav {
@@ -172,9 +164,8 @@ header nav {
     justify-content: space-evenly;
     flex: 0.7;
     align-items: center;
-    margin-left: auto;
     padding: 30px;
 }
 
 
-}
+}*/
