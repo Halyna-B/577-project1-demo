@@ -17,11 +17,6 @@ header {
     --logo-font-family: 'Playfair Display', serif;
 }
 
- {
-    margin: 0;
-    padding: 0;
-} 
-
 body {
     max-width: 980px;
     margin: auto;
@@ -32,6 +27,10 @@ body {
     padding: 30px;
     }
 
+.main-menu {
+    display: none;
+}
+    
 .main-menu a {
     color: var(--menu-color);
     font-size: 14px;
@@ -43,7 +42,7 @@ body {
 .main-menu li {
     list-style: none;
     text-align: right;
-    display: none;
+    
 }
 
 .main-menu a:hover {
@@ -64,17 +63,24 @@ body {
     color: #f51400;
 }
 
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
 .banner h1 {
     font-family: var(--logo-font-family);
     font-size: 70px;
     color: var(--main-color);
-    padding: 30px;
+    margin-left: 30px;
     font-weight: 600;
 }
 
 .banner iframe {
     border-width: 10px;
     border-color: #ffffff;
+    border-style: solid;
    max-width: 350px;
    max-height: 200px;
    margin-left: 30px;
@@ -85,7 +91,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    line-height: 50px;
+    line-height: 1;
     padding: 30px;
 }
 
@@ -101,7 +107,7 @@ body {
     color: var(--main-color);
     font-family: var(--main-font-family);
     font-size: 13px;
-  
+
 }
 
 .trip p:nth-last-child(2) {
@@ -131,29 +137,14 @@ body {
     pointer-events: none;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 800px) {
+
+.burger-icon {
+    display: none;
 }
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-@media (min-width: 801px) {
+.logo {
+    display: block;
+}
 
 header nav {
     display: flex;
@@ -162,10 +153,52 @@ header nav {
 .main-menu {
     display: flex;
     justify-content: space-evenly;
-    flex: 0.7;
+    flex: 1;
     align-items: center;
     padding: 30px;
 }
 
+.button a::after{
+content: "   →";
+color: var(--main-color);
+}
 
-}*/
+
+.button a {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    color: #FFFFFF;
+    text-align: center;
+    transition: color 0.7s;
+    background-color: transparent;
+}
+.button a:hover {
+    color: #01292b;
+    background-color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+.button a:hover::after {
+color: #01292b;
+}
+
+.banner h1 {
+ font-size: 125px;
+}
+.promo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+}
+
+.banner iframe {
+   border-width: 10px;
+   border-color: #ffffff;
+   border-style: solid;
+   max-width: 450px;
+   max-height: 300px;
+}
+}
