@@ -2,14 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
 
-header {
-    background-image: url("../img/header-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 200px;
-}
-
 :root {
     --menu-color: #f7f7f7;
     --main-color: #ffffff;
@@ -20,6 +12,14 @@ header {
 body {
     max-width: 980px;
     margin: auto;
+}
+
+header {
+    background-image: url("../img/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
 }
 
 .logo > img {
